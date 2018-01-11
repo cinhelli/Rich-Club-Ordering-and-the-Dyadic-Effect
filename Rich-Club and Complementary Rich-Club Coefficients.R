@@ -48,7 +48,7 @@ rich.club.coeff.new <- function (g, k = 1)
   }
   else {
     rich.club.nodes <- order(degs)[(Nv - Nk + 1):Nv] #Consider the Nk nodes
-    # order  E' SORT MA CON GLI INDICI DEI NODI
+
     rich.club.graph <- induced.subgraph(g, rich.club.nodes)
     Ek <- ecount(rich.club.graph)
     
